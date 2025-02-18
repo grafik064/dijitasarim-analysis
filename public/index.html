@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DijiTasarım - Grafik Tasarım Analiz Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DijiTasarım</h1>
+        <p>Grafik Tasarım Analiz Sistemi</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <div class="upload-container">
+                <h2>Tasarımınızı Yükleyin</h2>
+                <form id="upload-form">
+                    <div class="file-input">
+                        <input type="file" id="design-file" accept="image/*" required>
+                        <label for="design-file">Dosya Seç</label>
+                    </div>
+                    <button type="submit">Analiz Et</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="analysis-section" class="hidden">
+            <div class="analysis-container">
+                <h2>Analiz Sonuçları</h2>
+                <div class="analysis-results">
+                    <div class="color-analysis">
+                        <h3>Renk Analizi</h3>
+                        <div id="color-results"></div>
+                    </div>
+                    <div class="composition-analysis">
+                        <h3>Kompozisyon Analizi</h3>
+                        <div id="composition-results"></div>
+                    </div>
+                    <div class="recommendations">
+                        <h3>Öneriler</h3>
+                        <div id="recommendations-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
